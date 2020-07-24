@@ -1,0 +1,279 @@
+body{
+    width: 100%;
+    max-width: 1620px;
+    margin: 0 auto;
+    font-family : 'Encode Sans', sans-serif;
+}
+
+header{
+    overflow:hidden;
+    position: relative;
+    padding-top: 15px;
+    background-color: #fdfdfd;
+}
+main{
+    overflow: hidden;
+    position: relative;
+    font-weight: 600;
+    background-color: #fafafa;
+}
+
+                            /* __________________header style start________________*/
+.background-img-top{
+    background-image: url('../img/Background-top.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+    width: 1245px;
+    position: absolute;
+    height: 460px;
+    left: -67%;
+    top: -30px;
+}
+.background-top-second-part{
+    background-image: url('../img/Background-top.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1245px;
+    position: absolute;
+    height: 460px;
+    left: -66%;
+    top: -292px;
+}
+.wrap-header{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    max-width: 935px;
+    width: 100%;
+    margin: 0 auto;
+    height: 188px;
+}
+.logo-project{
+    text-align: center;
+    flex-grow: 1;
+    z-index: 2;
+    margin-bottom: 35px;
+}
+.monblan-project{
+    margin-left: 50px;
+    flex-grow: 3;
+    margin-top: 35px;
+}
+.name-and-date{
+    display: flex;
+}
+.name-monblan{
+    font-size: 35px;
+    font-weight: 500;
+}
+.date-monblan{
+    margin-left: 20px;
+    padding: 10px;
+    border: 1px solid #42699d;
+    border-radius: 5px;
+    color: #42699d;
+    opacity: 0.5;
+    
+}
+.posts-and-followers{
+    display: flex;
+    margin-top: 25px;
+    font-size: 17px;
+}
+.monblan-posts{
+    margin-right: 28px;
+}
+.monblan-followers{
+    margin-right: 28px;
+}
+
+
+
+                            /* __________________header style END________________*/
+
+
+
+                            /* _____________Main Style start ______________*/
+
+.burger-button{
+    display: flex;
+    justify-content: flex-end;
+    height: 25px;
+    width: 100%;
+    max-width: 935px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding-top: 15px;
+}
+.burger-button button{
+    border: none;
+    outline: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+.burger-inline{
+    margin-left: 20px;
+}
+.flex-wrap{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 935px;
+    margin: 0 auto;
+    position: relative;
+}
+.wrap-posts{
+    margin-left: 35px;
+    margin-right: 90px;
+    margin-top: 20px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.fa{
+    margin-right: 5px;
+}
+.fas{
+    margin-right: 5px;
+    margin-left: 20px;
+}
+.logo-post{
+    height: 95px;
+}
+.post{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: #fff;
+    color: black;
+}
+.wrap-likes-and-comment{
+    display: flex;
+
+}
+.wrap-likes-and-comment, .when-upload{
+    margin-top: 18px;
+}
+
+
+
+
+/* Footer style */
+
+
+.btn-add{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 10px 30px;
+    
+}
+.button-load-more{
+    position: relative;
+    padding-bottom: 75px;
+}
+.background-footer{
+    background-image: url('../img/background-bot.png');
+    background-repeat: no-repeat;
+    position: absolute;
+  
+    width: 542px;
+    height: 410px;
+    right: -660px;
+    bottom: -85px;
+    background-size: contain;
+  
+}
+.style-btn-load-more{
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px 30px;
+    background-color: #fff;
+    outline: none;
+}
+
+
+                        /* ______________Change for button grid_______________________ */
+
+.grid-view.flex-wrap{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.grid-view .post{
+    width: 30%;
+    position: relative;
+}
+.grid-view .post::after{
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+.grid-view .logo-post img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-view .logo-post{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.grid-view .logo-post::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.grid-view .wrap-posts{
+    color: #fff;
+    z-index: 2;
+    font-weight: 400;
+    margin: 0;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+.grid-view .wrap-posts::before{
+    content:'';
+    display: block;
+}
+.grid-view .like-and-comment-today,
+.grid-view .like-and-comment-early{
+    display: flex;
+    margin-top: 20px;
+}
+.grid-view .wrap-likes-and-comment,
+.grid-view .when-upload{
+    margin: 0;
+}
+.grid-view .wrap-likes-and-comment{
+    flex-grow: 2;
+    justify-content: flex-end;
+    margin-right: 45px;
+}
+.grid-view .when-like-and-comment{
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.grid-view .image-upload-date{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.grid-view .upload-image::after{
+    content: ':';
+    margin-right: 5px;
+}

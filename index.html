@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="wrap-header">
+            <div class="background-img-top"></div>
+            <div class="logo-project">
+                <img src="./img/Logo.png" alt="Logo-Monblan-project">
+            </div>
+            <div class="monblan-project">
+                <div class="name-and-date">
+                    <div class="name-monblan">monblanproject</div>
+                    <div class="date-monblan">Start on 17-02-2016</div>
+                </div>
+                <div class="posts-and-followers">
+                    <div class="monblan-posts"><b>870</b> posts</div>
+                    <div class="monblan-followers"><b>11,787</b> followers</div>
+                    <div class="monblan-following"><b>112</b> following</div>
+                </div>
+                <!-- <div class="date-picker">
+                    <div class="date">
+                        date
+                    </div>
+                    <div  class="first-calendar">
+                        <input id="dateStart" type="text">
+                    </div>
+                    <div  class="second-calendar">
+                        <input id="dateEnd" type="text">
+                    </div>
+                    
+                </div> -->
+            </div>
+        </div>
+    </header>
+    <main class="wrap">
+        
+        <div class="burger-button">
+            <div id="btnGridView" class="burger-colum">
+                <button><img src="./img/burger-colum.png" alt="colum-button"></button>
+            </div>
+            <div id="btnListView" class="burger-inline">
+                <button><img src="./img/burger-inline.png" alt="inline-button"></button>
+            </div>
+        </div>
+        <div id="postsWrap" class="flex-wrap">
+            <div class="background-top-second-part"></div>
+            <div class="post">
+                <div class="logo-post">
+                    <img src="./img/post-photo-1.png" alt="logo">
+                </div>
+                <div class="wrap-posts">
+                    <div class="like-and-comment-today">
+                        <div class="when-like-and-comment">Today</div>
+                        <div class="wrap-likes-and-comment">
+                            <div class="like"><i class="fa fa-heart" aria-hidden="true"></i>128</div>
+                            <div class="comment"><i class="fas fa-comment-alt"></i>31</div>
+                        </div>
+                        
+                    </div>
+                    <div class="like-and-comment-early">
+                        <div class="when-like-and-comment">9-08-2016</div>
+                        <div class="wrap-likes-and-comment">
+                            <div class="like"><i class="fa fa-heart" aria-hidden="true"></i>128</div>
+                            <div class="comment"><i class="fas fa-comment-alt"></i>31</div>
+                        </div>
+                    </div>
+                    <div class="image-upload-date">
+                        <div class="upload-image">Image upload</div>
+                        <div class="when-upload">11-04-2016</div>
+                    </div>
+                </div>    
+            </div>
+            <div class="post">
+                <div class="logo-post">
+                    <img src="./img/post-photo-2.png" alt="logo">
+                </div>
+                <div class="wrap-posts">
+                    <div class="like-and-comment-today">
+                        <div class="when-like-and-comment">Today</div>
+                        <div class="wrap-likes-and-comment">
+                            <div class="like"><i class="fa fa-heart" aria-hidden="true"></i>128</div>
+                            <div class="comment"><i class="fas fa-comment-alt"></i>31</div>
+                        </div>
+                        
+                    </div>
+                    <div class="like-and-comment-early">
+                        <div class="when-like-and-comment">9-08-2016</div>
+                        <div class="wrap-likes-and-comment">
+                            <div class="like"><i class="fa fa-heart" aria-hidden="true"></i>128</div>
+                            <div class="comment"><i class="fas fa-comment-alt"></i>31</div>
+                        </div>
+                    </div>
+                    <div class="image-upload-date">
+                        <div class="upload-image">Image upload</div>
+                        <div class="when-upload">11-04-2016</div>
+                    </div>
+                </div>    
+            </div>
+            <div class="post">
+                <div class="logo-post">
+                    <img src="./img/post-photo-3.png" alt="logo">
+                </div>
+                <div class="wrap-posts">
+                    <div class="like-and-comment-today">
+                        <div class="when-like-and-comment">Today</div>
+                        <div class="wrap-likes-and-comment">
+                            <div class="like"><i class="fa fa-heart" aria-hidden="true"></i>128</div>
+                            <div class="comment"><i class="fas fa-comment-alt"></i>31</div>
+                        </div>
+                        
+                    </div>
+                    <div class="like-and-comment-early">
+                        <div class="when-like-and-comment">9-08-2016</div>
+                        <div class="wrap-likes-and-comment">
+                            <div class="like"><i class="fa fa-heart" aria-hidden="true"></i>128</div>
+                            <div class="comment"><i class="fas fa-comment-alt"></i>31</div>
+                        </div>
+                    </div>
+                    <div class="image-upload-date">
+                        <div class="upload-image">Image upload</div>
+                        <div class="when-upload">11-04-2016</div>
+                    </div>
+                </div>    
+            </div>
+            <div class="post">
+                <div class="logo-post">
+                    <img src="./img/post-photo-4.png" alt="logo">
+                </div>
+                <div class="wrap-posts">
+                    <div class="like-and-comment-today">
+                        <div class="when-like-and-comment">Today</div>
+                        <div class="wrap-likes-and-comment">
+                            <div class="like"><i class="fa fa-heart" aria-hidden="true"></i>128</div>
+                            <div class="comment"><i class="fas fa-comment-alt"></i>31</div>
+                        </div>
+                        
+                    </div>
+                    <div class="like-and-comment-early">
+                        <div class="when-like-and-comment">9-08-2016</div>
+                        <div class="wrap-likes-and-comment">
+                            <div class="like"><i class="fa fa-heart" aria-hidden="true"></i>128</div>
+                            <div class="comment"><i class="fas fa-comment-alt"></i>31</div>
+                        </div>
+                    </div>
+                    <div class="image-upload-date">
+                        <div class="upload-image">Image upload</div>
+                        <div class="when-upload">11-04-2016</div>
+                    </div>
+                </div>    
+            </div>
+            <div class="post">
+                <div class="logo-post">
+                    <img src="./img/post-photo-5.png" alt="logo">
+                </div>
+                <div class="wrap-posts">
+                    <div class="like-and-comment-today">
+                        <div class="when-like-and-comment">Today</div>
+                        <div class="wrap-likes-and-comment">
+                            <div class="like"><i class="fa fa-heart" aria-hidden="true"></i>128</div>
+                            <div class="comment"><i class="fas fa-comment-alt"></i>31</div>
+                        </div>
+                        
+                    </div>
+                    <div class="like-and-comment-early">
+                        <div class="when-like-and-comment">9-08-2016</div>
+                        <div class="wrap-likes-and-comment">
+                            <div class="like"><i class="fa fa-heart" aria-hidden="true"></i>128</div>
+                            <div class="comment"><i class="fas fa-comment-alt"></i>31</div>
+                        </div>
+                    </div>
+                    <div class="image-upload-date">
+                        <div class="upload-image">Image upload</div>
+                        <div class="when-upload">11-04-2016</div>
+                    </div>
+                </div>    
+            </div>
+            <div class="post">
+                <div class="logo-post">
+                    <img src="./img/post-photo-6.png" alt="logo">
+                </div>
+                <div class="wrap-posts">
+                    <div class="like-and-comment-today">
+                        <div class="when-like-and-comment">Today</div>
+                        <div class="wrap-likes-and-comment">
+                            <div class="like"><i class="fa fa-heart" aria-hidden="true"></i>128</div>
+                            <div class="comment"><i class="fas fa-comment-alt"></i>31</div>
+                        </div>
+                        
+                    </div>
+                    <div class="like-and-comment-early">
+                        <div class="when-like-and-comment">9-08-2016</div>
+                        <div class="wrap-likes-and-comment">
+                            <div class="like"><i class="fa fa-heart" aria-hidden="true"></i>128</div>
+                            <div class="comment"><i class="fas fa-comment-alt"></i>31</div>
+                        </div>
+                    </div>
+                    <div class="image-upload-date">
+                        <div class="upload-image">Image upload</div>
+                        <div class="when-upload">11-04-2016</div>
+                    </div>
+                </div>    
+            </div>
+            <div class="post">
+                <div class="logo-post">
+                    <img src="./img/post-photo-7.png" alt="logo">
+                </div>
+                <div class="wrap-posts">
+                    <div class="like-and-comment-today">
+                        <div class="when-like-and-comment">Today</div>
+                        <div class="wrap-likes-and-comment">
+                            <div class="like"><i class="fa fa-heart" aria-hidden="true"></i>128</div>
+                            <div class="comment"><i class="fas fa-comment-alt"></i>31</div>
+                        </div>
+                        
+                    </div>
+                    <div class="like-and-comment-early">
+                        <div class="when-like-and-comment">9-08-2016</div>
+                        <div class="wrap-likes-and-comment">
+                            <div class="like"><i class="fa fa-heart" aria-hidden="true"></i>128</div>
+                            <div class="comment"><i class="fas fa-comment-alt"></i>31</div>
+                        </div>
+                    </div>
+                    <div class="image-upload-date">
+                        <div class="upload-image">Image upload</div>
+                        <div class="when-upload">11-04-2016</div>
+                    </div>
+                </div>    
+            </div>
+            <div class="post">
+                <div class="logo-post">
+                    <img src="./img/post-photo-8.png" alt="logo">
+                </div>
+                <div class="wrap-posts">
+                    <div class="like-and-comment-today">
+                        <div class="when-like-and-comment">Today</div>
+                        <div class="wrap-likes-and-comment">
+                            <div class="like"><i class="fa fa-heart" aria-hidden="true"></i>128</div>
+                            <div class="comment"><i class="fas fa-comment-alt"></i>31</div>
+                        </div>
+                        
+                    </div>
+                    <div class="like-and-comment-early">
+                        <div class="when-like-and-comment">9-08-2016</div>
+                        <div class="wrap-likes-and-comment">
+                            <div class="like"><i class="fa fa-heart" aria-hidden="true"></i>128</div>
+                            <div class="comment"><i class="fas fa-comment-alt"></i>31</div>
+                        </div>
+                    </div>
+                    <div class="image-upload-date">
+                        <div class="upload-image">Image upload</div>
+                        <div class="when-upload">11-04-2016</div>
+                    </div>
+                </div>    
+            </div>
+            <div class="post">
+                <div class="logo-post">
+                    <img src="./img/post-photo-9.png" alt="logo">
+                </div>
+                <div class="wrap-posts">
+                    <div class="like-and-comment-today">
+                        <div class="when-like-and-comment">Today</div>
+                        <div class="wrap-likes-and-comment">
+                            <div class="like"><i class="fa fa-heart" aria-hidden="true"></i>128</div>
+                            <div class="comment"><i class="fas fa-comment-alt"></i>31</div>
+                        </div>
+                        
+                    </div>
+                    <div class="like-and-comment-early">
+                        <div class="when-like-and-comment">9-08-2016</div>
+                        <div class="wrap-likes-and-comment">
+                            <div class="like"><i class="fa fa-heart" aria-hidden="true"></i>128</div>
+                            <div class="comment"><i class="fas fa-comment-alt"></i>31</div>
+                        </div>
+                    </div>
+                    <div class="image-upload-date">
+                        <div class="upload-image">Image upload</div>
+                        <div class="when-upload">11-04-2016</div>
+                    </div>
+                </div>    
+            </div>
+            <div class="background-footer"></div>
+        </div>
+        <div class="button-load-more">
+            
+            <div class="btn-add">
+                <button class="style-btn-load-more">LOAD MORE</button>
+            </div>
+        </div>    
+    </main>
+    <script src="./js/datepicker.min.js"></script>
+    <script src="https://kit.fontawesome.com/7358891a03.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>
