@@ -21,6 +21,6 @@ function onListClick() {
 };
 
 
-
-const start = datepicker('#dateStart', { id: 1 })
-const end = datepicker('#dateEnd', { id: 1 })
+// Code for datePicker
+const start = datepicker('#dateStart', { id: 1 ,customDays: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa']})
+const end = datepicker('#dateEnd', { id: 1 ,customDays: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa']})

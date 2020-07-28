@@ -3,10 +3,11 @@ body{
     max-width: 1620px;
     margin: 0 auto;
     font-family : 'Encode Sans', sans-serif;
+    
 }
 
 header{
-    overflow:hidden;
+
     position: relative;
     padding-top: 15px;
     background-color: #fdfdfd;
@@ -16,30 +17,63 @@ main{
     position: relative;
     font-weight: 600;
     background-color: #fafafa;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
                             /* __________________header style start________________*/
 .background-img-top{
     background-image: url('../img/Background-top.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     opacity: 0.5;
-    width: 1245px;
+    width: 95.7%;
     position: absolute;
     height: 460px;
-    left: -67%;
+    left: -36.6%;
+    background-position-x: right;
     top: -30px;
 }
 .background-top-second-part{
     background-image: url('../img/Background-top.png');
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 1245px;
+    background-size: cover;
+    width: 99%;
     position: absolute;
-    height: 460px;
-    left: -66%;
-    top: -292px;
+    height: 452px;
+    left: -39.5%;
+    top: -296px;
+    background-position-x: right;
 }
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #000;
+    margin-left: 5px;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #000;
+    margin-left: 5px;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #000;
+    margin-left: 5px;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #000;
+    margin-left: 5px;
+  }
+  .style-calendar-input{
+      padding-left: 10px;
+      border-radius: 5px;
+      height: 26px;
+      font-size: 15px;
+      border: 1px solid #d4d4d4;
+  }
+  
+  .first-calendar{
+      margin-left: 15px;
+      margin-right: 25px;
+  }
+  
 .wrap-header{
     display: flex;
     position: relative;
@@ -47,7 +81,7 @@ main{
     max-width: 935px;
     width: 100%;
     margin: 0 auto;
-    height: 188px;
+    min-height: 188px;
 }
 .logo-project{
     text-align: center;
@@ -56,7 +90,7 @@ main{
     margin-bottom: 35px;
 }
 .monblan-project{
-    margin-left: 50px;
+    margin-left: 18%;
     flex-grow: 3;
     margin-top: 35px;
 }
@@ -70,10 +104,10 @@ main{
 .date-monblan{
     margin-left: 20px;
     padding: 10px;
-    border: 1px solid #42699d;
+    border: 1px solid #3d90dd;
     border-radius: 5px;
-    color: #42699d;
-    opacity: 0.5;
+    color: #3d90dd;
+    
     
 }
 .posts-and-followers{
@@ -87,7 +121,76 @@ main{
 .monblan-followers{
     margin-right: 28px;
 }
+.style-btn-for-calendar{
+    cursor: pointer;
+    position: absolute;
+    outline: 0;
+    border: 1px solid #d4d4d4;
+    
+}
+input:focus {
+    outline: none;
+}
+.style-btn-for-calendar .fas{
+    margin: 0;
+    font-size: 26px;
+    color: #848484;
+}
+.style-btn-for-calendar .far{
+    margin: 0;
+    font-size: 26px;
+    color: #848484;
+}
+.open-btn-calendar{
+    right: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 
+.close-btn-calendar{
+    right: 36px;
+}
+.date-picker{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.qs-datepicker-container{
+    margin-top: 3px;
+    
+    font-family: 'Encode Sans', sans-serif;
+}
+
+
+
+
+.qs-arrow.qs-left:after{
+    content: '\f100';
+    border: 0;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 10px;
+    right: 10%;
+}
+.qs-arrow.qs-right:after{
+    content: '\f101';
+    border: 0;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 10px;
+    left: 10%;
+}
+.qs-square:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active):hover{
+    background: #3d90dd;
+    color: #fff;
+}
+.qs-day{
+    color: #000;
+}
+.qs-controls{
+    background: #fff;
+}
 
 
                             /* __________________header style END________________*/
@@ -99,7 +202,7 @@ main{
 .burger-button{
     display: flex;
     justify-content: flex-end;
-    height: 25px;
+    height: 32px;
     width: 100%;
     max-width: 935px;
     margin: 0 auto;
@@ -112,8 +215,20 @@ main{
     background-color: inherit;
     cursor: pointer;
 }
-.burger-inline{
-    margin-left: 20px;
+.burger-button .fas {
+    font-size: 30px;
+    color: #d8d8d8;
+    margin-right: 0;
+    transition: transform 1s;
+    transition-delay: 1s;
+    transition-duration: 2s;
+}
+.burger-button .fas:hover{
+    font-size: 35px;
+}
+
+.active .fas{
+    color: #3d90dd;
 }
 .flex-wrap{
     display: flex;
@@ -179,7 +294,6 @@ main{
     background-image: url('../img/background-bot.png');
     background-repeat: no-repeat;
     position: absolute;
-  
     width: 542px;
     height: 410px;
     right: -660px;
@@ -187,13 +301,21 @@ main{
     background-size: contain;
   
 }
+
 .style-btn-load-more{
     border-radius: 20px;
     cursor: pointer;
     padding: 10px 30px;
     background-color: #fff;
     outline: none;
+    transition: all 300ms ease;
+    box-shadow: 0px 4px 10px 2px rgba(black, 0.2);
 }
+.style-btn-load-more:hover{
+    background-color: #3d90dd;
+    color: #fff;
+}
+   
 
 
                         /* ______________Change for button grid_______________________ */
@@ -204,7 +326,7 @@ main{
     justify-content: space-between;
 }
 .grid-view .post{
-    width: 30%;
+    width: 32.5%;
     position: relative;
 }
 .grid-view .post::after{
@@ -276,4 +398,97 @@ main{
 .grid-view .upload-image::after{
     content: ':';
     margin-right: 5px;
+}
+
+
+/*------------------------------Media query-------------------------  */
+
+@media (max-width: 920px) { 
+    .monblan-project{
+        margin-left: 10%;
+    }
+}
+@media (max-width: 825px) { 
+    .background-img-top{
+        left: -27.6%;
+    }
+    .background-top-second-part{
+        left: -30.5%;
+    }
+
+    .grid-view .post{
+        width: 49%;
+    }
+
+}
+@media (max-width: 780px) { 
+    .wrap-header{
+        flex-direction: column;
+    }
+    .background-img-top{
+        background: none;
+    }
+    .background-top-second-part{
+        background: none;
+    }
+    .monblan-project{
+        margin: 0 auto;
+    }
+    .logo-project{
+        background: #b6dfca;
+    }
+    .wrap-posts{
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 600px) { 
+    .qs-datepicker-container{
+        left: -66px!important;
+    }
+    .wrap-posts{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .grid-view .wrap-likes-and-comment{
+        margin-right: 20px;
+    }
+}
+
+
+@media (max-width: 499px){
+    .date-picker{
+        flex-direction: column;
+    }
+    .first-calendar{
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .date{
+        margin-bottom: 5px;
+    }
+    header{
+        padding-top: 0;
+    }
+    .logo-project{
+        padding-top: 10px;
+    }
+    .monblan-project{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .qs-datepicker-container {
+        left: -33px!important;
+    }
+    .grid-view .post{
+        width: 99%;
+        flex-direction: row;
+    }
+    .post{
+        flex-direction: column;
+    }
+    .logo-post{
+        text-align: center;
+    }
 }

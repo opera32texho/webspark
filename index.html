@@ -26,18 +26,22 @@
                     <div class="monblan-followers"><b>11,787</b> followers</div>
                     <div class="monblan-following"><b>112</b> following</div>
                 </div>
-                <!-- <div class="date-picker">
+                <div class="date-picker">
                     <div class="date">
-                        date
+                        Date
                     </div>
                     <div  class="first-calendar">
-                        <input id="dateStart" type="text">
+                        <input id="dateStart" class="style-calendar-input" type="text"  placeholder="from">
+                        <button  class="style-btn-for-calendar close-btn-calendar"><i class="fas fa-times"></i></button>
+                        <button id='closeBtn' class="style-btn-for-calendar open-btn-calendar"><i class="far fa-calendar"></i></button>
                     </div>
                     <div  class="second-calendar">
-                        <input id="dateEnd" type="text">
+                        <input id="dateEnd" class="style-calendar-input" type="text" placeholder="to">
+                        <button class="style-btn-for-calendar close-btn-calendar"><i class="fas fa-times"></i></button>
+                        <button class="style-btn-for-calendar open-btn-calendar"><i class="far fa-calendar"></i></button>
                     </div>
                     
-                </div> -->
+                </div>
             </div>
         </div>
     </header>
@@ -45,10 +49,10 @@
         
         <div class="burger-button">
             <div id="btnGridView" class="burger-colum">
-                <button><img src="./img/burger-colum.png" alt="colum-button"></button>
+                <button><i class="fas fa-th"></i></button>
             </div>
-            <div id="btnListView" class="burger-inline">
-                <button><img src="./img/burger-inline.png" alt="inline-button"></button>
+            <div id="btnListView" class="burger-inline active">
+                <button><i class="fas fa-list"></i></button>
             </div>
         </div>
         <div id="postsWrap" class="flex-wrap">
