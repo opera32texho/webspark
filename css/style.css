@@ -105,7 +105,8 @@ main{
 }
 .date-monblan{
     margin-left: 20px;
-    padding: 6px;
+    font-size: 14px;
+    padding: 5px;
     border: 1px solid #3d90dd;
     border-radius: 5px;
     color: #3d90dd;
