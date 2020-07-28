@@ -19,7 +19,7 @@ main{
     background-color: #fafafa;
     padding-left: 10px;
     padding-right: 10px;
-    box-shadow: 0px 4px 5px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.2);
 }
 
                             /* __________________header style start________________*/
@@ -66,7 +66,8 @@ main{
       padding-left: 10px;
       border-radius: 5px;
       height: 26px;
-      font-size: 15px;
+      min-width: 185px;
+      font-size: 14px;
       border: 1px solid #d4d4d4;
   }
   
@@ -99,12 +100,12 @@ main{
     display: flex;
 }
 .name-monblan{
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 500;
 }
 .date-monblan{
     margin-left: 20px;
-    padding: 10px;
+    padding: 6px;
     border: 1px solid #3d90dd;
     border-radius: 5px;
     color: #3d90dd;
@@ -156,6 +157,7 @@ input:focus {
     display: flex;
     align-items: center;
     position: relative;
+    margin-bottom: 5px;
 }
 .qs-datepicker-container{
     margin-top: 3px;
